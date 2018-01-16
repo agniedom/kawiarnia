@@ -56,6 +56,12 @@ public class CofeeAdapter extends RecyclerView.Adapter<CofeeAdapter.ViewHolder> 
 
         @OnClick(R.id.btn_wybierzkawke)
         void onClick2(){
+            if(Wybrane.getVisibility()==View.INVISIBLE){
+                Wybrane.setVisibility(View.VISIBLE);
+            }
+            else{
+                Wybrane.setVisibility(View.INVISIBLE);
+            }
 
         }
 
@@ -63,6 +69,7 @@ public class CofeeAdapter extends RecyclerView.Adapter<CofeeAdapter.ViewHolder> 
         {
             super(itemView);
             ButterKnife.bind(this,itemView);
+            Wybrane.setVisibility(View.INVISIBLE);
         }
 
         private void setName(String Name) {
