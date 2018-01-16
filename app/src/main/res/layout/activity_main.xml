@@ -54,7 +54,7 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:text="ZMIEŃ MIEJSCE"
+        android:text="WYBIERZ DANIE"
         android:textColor="@android:color/white"
         android:layout_marginTop="180dp"/>
 
