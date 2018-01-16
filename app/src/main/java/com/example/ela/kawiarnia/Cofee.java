@@ -6,7 +6,7 @@ package com.example.ela.kawiarnia;
 
 public class Cofee {
     private String name;
-    private double price;
+    private String price;
 
 
     public String getCofeeName() {
@@ -17,17 +17,16 @@ public class Cofee {
         this.name = Name;
     }
 
-    public double getPrice() {
-        return price;
+    public String getPrice() {
+        return this.price;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setPrice(String Price) {
+        this.price = Price;
     }
 
-    public Cofee(String Name,  double price) {
-        this.name = Name;
-
+    public Cofee(String name,  String price) {
+        this.name = name;
         this.price = price;
     }
 

@@ -31,19 +31,16 @@ public class MainActivity extends AppCompatActivity {
     TextView txt_welcometocafee;
 
     @OnClick(R.id.btn_wybierzdanie)
-    void onClick1(View view){
+    void onClick1(){
 
         Intent intent = new Intent( MainActivity.this, Main2Activity.class);
-        Bundle bundle = new Bundle();
-        String wpisanyTekst = Edit_Cofee.getText().toString();
-        bundle.putString("KEY", wpisanyTekst);
-        intent.putExtras(bundle);
-
+        startActivity(intent);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
     }
 }

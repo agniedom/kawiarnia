@@ -26,9 +26,16 @@ public class Main2Activity extends AppCompatActivity {
 
         //Lista miejsc
         ArrayList<Cofee> cofees = new ArrayList<>();
-        cofees.add(new Cofee("Latte",12.00));
-        cofees.add(new Cofee("Cappucino",14.30));
-        cofees.add(new Cofee("Expresso",7.90));
-        cofees.add(new Cofee("Machiato",22.00));
+        cofees.add(new Cofee("Latte","12.00 zł"));
+        cofees.add(new Cofee("Cappucino","15.00 zł"));
+        cofees.add(new Cofee("Expresso","22.00 zł"));
+        cofees.add(new Cofee("Machiato","32.00 zł"));
+
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
+        recyclerView.setLayoutManager(layoutManager);
+
+        //Tworzenie Adaptera
+        CofeeAdapter cofeeAdapter = new CofeeAdapter(cofees);
+        recyclerView.setAdapter(cofeeAdapter);
     }
 }

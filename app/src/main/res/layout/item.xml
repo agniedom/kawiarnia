@@ -39,7 +39,7 @@
         android:id="@+id/btn_wybierzkawke"
         android:layout_width="110dp"
         android:layout_height="60dp"
-        android:layout_alignPa="@id/price"
+        android:layout_alignBottom="@id/price"
         android:layout_alignParentRight="true"
         android:layout_below="@id/price"
         android:layout_margin="5dp"
