@@ -1,13 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
-    <TextView
-        android:layout_margin="10dp"
-        android:id="@+id/kawa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_check_black_24dp" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/cofka"
+        android:layout_width="wrap_content"
+        android:layout_height="85dp"
+        android:layout_toRightOf="@+id/check"
+        android:gravity="center"
+        android:text="Latte"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="12.00zł"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+
+        />
+
+    <Button
+        android:id="@+id/btn_wybierzkawke"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_alignPa="@id/price"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/price"
+        android:layout_margin="5dp"
+        android:background="@color/colorPrimary"
+        android:text="WYBIERZ"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+
+        />
+
+</RelativeLayout>
