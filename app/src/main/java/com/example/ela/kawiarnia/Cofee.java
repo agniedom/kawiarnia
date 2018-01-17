@@ -9,11 +9,11 @@ public class Cofee {
     private String price;
 
 
-    public String getCofeeName() {
+    public String getName() {
         return name;
     }
 
-    public void setCofeeName(String Name) {
+    public void setName(String Name) {
         this.name = Name;
     }
 

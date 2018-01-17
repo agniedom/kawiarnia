@@ -15,23 +15,13 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    @BindView(R.id.txt_edittext)
-    EditText Edit_Cofee ;
+
 
     @BindView(R.id.btn_wybierzdanie)
     Button btn_wybierzdanie ;
 
-    @BindView(R.id.btn_zamow)
-    Button btn_zamow;
-
-    @BindView(R.id.txt_longtex)
-    TextView txt_longtex;
-
-    @BindView(R.id.txt_welcomtocafee)
-    TextView txt_welcometocafee;
-
     @OnClick(R.id.btn_wybierzdanie)
-    void onClick1(){
+    void onClick1(View view){
 
         Intent intent = new Intent( MainActivity.this, Main2Activity.class);
         startActivity(intent);

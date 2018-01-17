@@ -34,7 +34,7 @@ public class CofeeAdapter extends RecyclerView.Adapter<CofeeAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        holder.setName(cofees.get(position).getCofeeName());
+        holder.setName(cofees.get(position).getName());
         holder.setPrice(cofees.get(position).getPrice());
     }
 
@@ -55,7 +55,7 @@ public class CofeeAdapter extends RecyclerView.Adapter<CofeeAdapter.ViewHolder> 
         ImageView Wybrane;
 
         @OnClick(R.id.btn_wybierzkawke)
-        void onClick2(){
+        void onNameClick(){
             if(Wybrane.getVisibility()==View.INVISIBLE){
                 Wybrane.setVisibility(View.VISIBLE);
             }

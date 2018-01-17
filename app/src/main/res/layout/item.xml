@@ -6,47 +6,46 @@
 
     <ImageView
         android:id="@+id/check"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginBottom="5dp"
-        android:src="@drawable/ic_check_black_24dp" />
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_check_black_24dp"
+        android:layout_marginBottom="5dp" />
 
     <TextView
         android:id="@+id/cofka"
         android:layout_width="wrap_content"
-        android:layout_height="85dp"
-        android:layout_toRightOf="@+id/check"
-        android:gravity="center"
+        android:layout_height="95dp"
         android:text="Latte"
+        android:textStyle="bold"
         android:textColor="@color/colorPrimary"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/check"
+        android:layout_marginBottom="100dp"
+        android:gravity="center" />
 
     <TextView
         android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:gravity="center"
-        android:text="12.00zł"
+        android:text="12.00 zł"
         android:textColor="@color/colorPrimary"
         android:textSize="25sp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
 
         />
 
     <Button
         android:id="@+id/btn_wybierzkawke"
-        android:layout_width="110dp"
-        android:layout_height="60dp"
-        android:layout_alignBottom="@id/price"
-        android:layout_alignParentRight="true"
-        android:layout_below="@id/price"
+        android:layout_width="100dp"
         android:layout_margin="5dp"
-        android:background="@color/colorPrimary"
-        android:text="WYBIERZ"
-        android:textColor="@android:color/white"
         android:textSize="15sp"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:text="Wybierz"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/price"
+        android:textColor="@android:color/white"
 
         />
 
